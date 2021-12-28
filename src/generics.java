@@ -1,21 +1,21 @@
 public class generics {
 
-    public static Float findmax(Float float_1, Float float_2, Float float_3) {
-        Float max;
-        if( float_1.compareTo(float_2) >= 0 && float_1.compareTo(float_3) >=0 ){
-            max = float_1;
-        }else if ( float_2.compareTo(float_3) >= 0 ){
-            max = float_2;
+    public static String findmax(String String_1, String String_2, String String_3) {
+        String max;
+        if( String_1.compareTo(String_2) >= 0 && String_1.compareTo(String_3) >=0 ){
+            max = String_1;
+        }else if ( String_2.compareTo(String_3) >= 0 ){
+            max = String_2;
         }else{
-            max = float_3;
+            max = String_3;
         }
         return max;
     }
 
     public static void main(String[] args) {
-        System.out.println(findmax(10.5f,2.5f,30.6f));
-        System.out.println(findmax(10.5f,55.4f,30.6f));
-        System.out.println(findmax(99.9f,25.8f,30.4f));
+        System.out.println(findmax("Apple","peach","Banana"));
+        System.out.println(findmax("A","App","cap"));
+        System.out.println(findmax("donkey","dog","cat"));
     }
 
 
