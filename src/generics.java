@@ -1,21 +1,21 @@
 public class generics {
 
-    public static Integer findmax(Integer int_1, Integer int_2, Integer int_3) {
-        Integer max;
-        if( int_1.compareTo(int_2) >= 0 ){
-            max = int_1;
-        }else if ( int_2.compareTo(int_3) >= 0 ){
-            max = int_2;
+    public static Float findmax(Float float_1, Float float_2, Float float_3) {
+        Float max;
+        if( float_1.compareTo(float_2) >= 0 && float_1.compareTo(float_3) >=0 ){
+            max = float_1;
+        }else if ( float_2.compareTo(float_3) >= 0 ){
+            max = float_2;
         }else{
-            max = int_3;
+            max = float_3;
         }
         return max;
     }
 
     public static void main(String[] args) {
-        System.out.println(findmax(10,25,30));
-        System.out.println(findmax(10,55,30));
-        System.out.println(findmax(99,25,30));
+        System.out.println(findmax(10.5f,2.5f,30.6f));
+        System.out.println(findmax(10.5f,55.4f,30.6f));
+        System.out.println(findmax(99.9f,25.8f,30.4f));
     }
 
 
